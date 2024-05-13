@@ -1,0 +1,15 @@
+0 read r1
+1 nop #didn't want to change all the numbers
+2 jgtzn r1 9
+3 jeqzn r1 12
+4 setn r2 3
+5 setn r3 4
+6 mul r4 r1 r2
+7 sub r4 r4 r3
+8 jumpn 13
+9 setn r2 5
+10 div r4 r1 r2
+11 jumpn 13
+12 setn r4 2
+13 write r4
+14 halt

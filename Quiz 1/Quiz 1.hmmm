@@ -1,0 +1,11 @@
+0 read r1 # falling time
+1 read r2 # initial position
+2 read r3 # initial velocity
+3 setn r4 -5 # gravity/2
+4 mul r5 r3 r1 # calculating second part p1
+5 add r5 r5 r2 # calculating second part p2
+6 mul r6 r1 r1 # calculating first part p1
+7 mul r6 r6 r4 # calculating first part p2
+8 add r7 r6 r5 # adding first part and second part
+9 write r7
+10 halt
